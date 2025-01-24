@@ -87,9 +87,10 @@ jobs:
 
     - name: Commit and push changes
       run: |
-        git config --global user.email "itsincognitos@gmail.com.
-        arnav-devops"
+        git config --global user.email "itsincognitos@gmail.com"
+        git config --global user.name "arnav-devops"
         git add helm/go-web-app-chart/values.yaml
         git commit -m "Update tag in Helm chart"
         git push
+       
 
